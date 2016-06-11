@@ -1,12 +1,7 @@
 import random
 
 door =9
-gloria=random.randint(1,door)
-andrew=random.randint(1,door)
-while gloria==andrew:
-    andrew=random.randint(1,door)
-g=gloria
-a=andrew
+
 livesLeft=3
 x=300
 
@@ -45,6 +40,10 @@ def try_again():
     
 intro()
 while livesLeft!=0:
+    g=random.randint(1,door)
+    a=random.randint(1,door)
+    while g==a:
+        a=random.randint(1,door)
     x=int(input())
     
     while x!=g and x!=a: 
